@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recicle e Aprenda</title>
+    <link rel="stylesheet" href="css/index-style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="logo">RECICLE E APRENDA</div>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Coleta Seletiva</a>
+                <a href="#">Código de Cores</a>
+                <a href="jogo.html">Jogo</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1>VOCÊ SABE PARA ONDE VAI O LIXO QUE DESCARTA TODOS OS DIAS?</h1>
+                <p>
+                    muitas pessoas não sabem para onde vai o lixo que descartam e acabam realizando o descarte de forma
+                    incorreta, jogando resíduos em locais inadequados ou separando-os de maneira errada. Essa prática
+                    representa um sério problema ambiental, pois contribui para a poluição do solo, da água e do ar,
+                    além de causar impactos à saúde humana e aos ecossistemas.
+                </p>
+            </div>
+            <div class="hero-img">
+                <img src="imagens/tela_inicial/hero.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="cards">
+        <div class="container">
+            <div class="card">
+                <img src="imagens/tela_inicial/lixo1.png">
+                <p>33,3 milhões de toneladas foram descartadas incorretamente em 2023.</p>
+            </div>
+            <div class="card">
+                <img src="imagens/tela_inicial/lixo2.png">
+                <p>O descarte irregular polui o solo, a água e o ar.</p>
+            </div>
+            <div class="card">
+                <img src="imagens/tela_inicial/lixo3.png">
+                <p>O descarte incorreto pode causar doenças e prejudicar o meio ambiente.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALERTA -->
+    <div class="alerta-wrapper">
+        <div class="alerta">
+            <h2>Descarte irregular é crime ambiental</h2>
+            <p>
+                A Lei nº 9.605/1998 considera crime o descarte inadequado de resíduos,
+                com penalidade que incluem multa e reclusão.
+            </p>
+        </div>
+    </div>
+
+    <!-- COLETA -->
+    <section class="coleta">
+        <h2>A COLETA SELETIVA: UM PASSO ESSENCIAL PARA O DESCARTE CORRETO</h2>
+
+        <div class="bloco">
+            <h3>O QUE É COLETA SELETIVA</h3>
+            <p>A coleta seletiva consiste na separação dos resíduos de acordo com sua composição e características,
+                permitindo a destinação adequada dos materiais e facilitando a reciclagem. Essa separação deve ser
+                realizada pelo próprio gerador dos resíduos, como cidadãos, empresas ou instituições, antes da coleta
+                (Ministério do Meio Ambiente, 2024).</p>
+        </div>
+
+        <div class="bloco">
+            <h3>OBJETIVO</h3>
+            <p>Seu principal objetivo é reduzir a quantidade de resíduos descartados de forma incorreta, contribuindo
+                para a preservação do meio ambiente, a economia de recursos naturais e o fortalecimento do trabalho dos
+                catadores de materiais recicláveis.</p>
+        </div>
+
+        <div class="bloco">
+            <h3>BENEFÍCIOS</h3>
+            <p>Entre seus benefícios estão a diminuição do volume de resíduos enviados a lixões e aterros, o aumento da
+                vida útil desses locais e a promoção da conscientização ambiental da população.</p>
+        </div>
+    </section>
+
+    <!-- CORES -->
+    <section class="cores">
+        <div class="container">
+            <h2>CÓDIGO DE CORES DAS LIXEIRAS</h2>
+
+            <div class="cores-top">
+                <div class="texto-cores">
+                    <p>
+                        O Conselho Nacional do Meio Ambiente (CONAMA) estabeleceu um código de cores para facilitar a
+                        separação correta dos resíduos. Esse sistema padroniza as lixeiras utilizadas em escolas, empresas e
+                        espaços públicos, tornando mais simples a identificação do destino adequado de cada material.
+                    </p>
+                    <p>
+                        Passe o mouse sobre cada lixeira para descobrir quais resíduos devem ser descartados nela.
+                    </p>
+                </div>
+                <img src="imagens/tela_inicial/conama.jpg">
+            </div>
+
+            <div class="lixeiras">
+                <!-- 5 lixeiras principais -->
+                <img src="imagens/lixeiras_e_cartas/lixeiras/lixeira_papel.PNG" data-tipo="papel">
+                <img src="imagens/lixeiras_e_cartas/lixeiras/lixeira_plastico.PNG" data-tipo="plastico">
+                <img src="imagens/lixeiras_e_cartas/lixeiras/lixeira_vidro.PNG" data-tipo="vidro">
+                <img src="imagens/lixeiras_e_cartas/lixeiras/lixeira_metal.PNG" data-tipo="metal">
+                <img src="imagens/lixeiras_e_cartas/lixeiras/lixeira_organico.PNG" data-tipo="organico">
+                <!-- 5 lixeiras adicionais -->
+                <img src="img/naoreciclavel" data-tipo="nao-reciclavel">
+                <img src="img/perigoso" data-tipo="perigoso">
+                <img src="img/saude" data-tipo="saude">
+                <img src="img/radioativo" data-tipo="radioativo">
+                <img src="img/madeira" data-tipo="madeira">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Agora que você aprendeu, coloque em prática no jogo!</h2>
+        <a href="jogo.html" class="btn-jogar">JOGAR AGORA</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        Desenvolvido por Andreza Soares - TCC 2026
+    </footer>
+
+    <!-- Tooltip flutuante -->
+    <div id="tooltipLixeira" class="tooltip-lixeira"></div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

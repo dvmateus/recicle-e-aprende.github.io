@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Jogo da Memória: Reciclagem</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/861/861143.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jogo-style.css">
+</head>
+<body>
+
+<h1>♻️ Jogo da Memória da Reciclagem ♻️</h1>
+
+<div class="info-panel">
+    <div>⏱️ Tempo: <span id="timer">00:00</span></div>
+    <div>❌ Erros Combinação: <span id="errosCombinacao">0</span> / 10</div>
+    <div>🗑️ Erros Lixeira: <span id="errosLixeira">0</span> / 3</div>
+    <button class="btn-reiniciar" id="btnReiniciarManual">🔄 Reiniciar</button>
+    <button id="muteBtn">🔊</button>
+    <button id="homeBtn">🏠 Home</button>
+</div>
+
+<div id="mensagem">Clique em "Começar Jogo" para iniciar</div>
+
+<div class="tabuleiro" id="tabuleiro"></div>
+
+<div class="lixeiras-wrapper">
+    <h2>Lixeiras</h2>
+    <div class="lixeiras-container" id="lixeiras-container"></div>
+</div>
+
+<!-- Modal de introdução -->
+<div id="modalIntro" class="modal">
+    <div class="modal-card">
+        <h2>Recicle Certo!♻️</h2>
+        <p>
+            <strong>Encontre os pares e descarte corretamente.</strong><br><br>
+            ⏱️ 90 segundos para completar.<br>
+            ❌ Até <strong>10 erros de combinação</strong>.<br>
+            🗑️ Até 3 erros de lixeira.<br>
+            🔄 A cada partida, novos itens aparecem!<br><br>
+            Boa sorte!
+        </p>
+        <button id="btnProsseguir">Prosseguir</button>
+    </div>
+</div>
+
+<!-- Modal de Game Over -->
+<div id="modalGameOver" class="modal gameover-modal" style="display: none;">
+    <div class="modal-card">
+        <h2>FIM DE JOGO</h2>
+        <div id="erroIconsContainer" class="erro-icons-container"></div>
+        <p id="gameoverMessage"></p>
+        <div>
+            <button id="btnRestartGame" class="btn-restart">🔄 JOGAR NOVAMENTE</button>
+            <button id="btnExitGame" class="btn-exit">🏠 HOME</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/jogo.js"></script>
+</body>
+</html>
